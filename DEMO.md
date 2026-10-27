@@ -1,8 +1,25 @@
 # Commands to run and edit
 
+For a guided Jupyter workbook, install `requirements-notebook.txt`, run
+`python -m jupyter lab` from the repository root, and open
+[`session_lab.ipynb`](session_lab.ipynb). Run its cells in order. The
+commands below are the terminal alternative.
+
 Use a terminal in the repo root with the virtual environment activated.
 Everything here uses bundled, offline data. The polling trace and token increments
 are invented.
+
+## Look at the raw input first
+
+The notebook prints the CSV header and its first three rows, then displays all
+original columns in `raw` and the calculated columns in `df`. From a terminal,
+you can also show the source directly:
+
+```sh
+head -n 4 data/events_synthetic.csv
+```
+
+This is a synthetic CSV fixture, not a raw OpenTelemetry capture.
 
 ## 1. Generate the report and chart
 

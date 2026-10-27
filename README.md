@@ -33,6 +33,28 @@ included so the findings can also be inspected without installing packages.
 results elsewhere. The input format deliberately accepts synthetic rows only;
 a production adapter would need separately validated units and provenance.
 
+## Run the Jupyter workbook
+
+From the repository root, activate the virtual environment and install the
+optional notebook dependencies, then start JupyterLab:
+
+```sh
+python -m pip install -r requirements-notebook.txt
+python -m jupyter lab
+```
+
+Open [session_lab.ipynb](session_lab.ipynb), select the Python environment in
+which you installed the requirements, and run the cells in order. The workbook
+uses the same synthetic input and analysis as the scripts. Package installation
+needs network access, but the workbook itself runs offline.
+
+## Open the deck
+
+Open the downloaded [deck.html](deck.html) in a browser, or open it in VS Code
+and use an HTML preview such as Live Preview. Its slide controls and embedded
+assets work offline. The diagram describes a conceptual telemetry flow; the demo
+itself uses the bundled synthetic CSV.
+
 ## Explore and edit during the lab
 
 See [DEMO.md](DEMO.md) for copyable commands and live edits. Start an interactive
@@ -81,6 +103,8 @@ python analyze.py
 
 | File | Origin and role |
 | --- | --- |
+| `deck.html` | Standalone presentation for the synthetic lab. |
+| `session_lab.ipynb` | Runnable Jupyter workbook using the synthetic fixture. |
 | `data/events_synthetic.csv` | Invented by `make_dataset.py`, fixed UTC timeline. Not Fable. |
 | `output/events_analyzed.csv`, `checkins.csv` | Derived row-level metrics, with original IDs for inspection. |
 | `output/summary.json`, `investigation.png` | Reproducible report and charts. |
