@@ -1,0 +1,11 @@
+session_id,event_id,started_at,tool,command,result,exit_code,tokens,duration_s,provenance,elapsed_s,tool_gap_s,cumulative_tokens,repeat_index,same_result_as_previous
+synthetic-demo,e01,2026-01-01 00:00:00+00:00,read,example.py,source-v1,,120,1.0,synthetic,0.0,,120,0,False
+synthetic-demo,e02,2026-01-01 00:00:10+00:00,edit,example.py,source-v2,,800,4.0,synthetic,10.0,10.0,920,0,False
+synthetic-demo,e03,2026-01-01 00:00:20+00:00,test,python -m unittest test_fast,5 tests OK,0.0,400,2.0,synthetic,20.0,10.0,1320,0,False
+synthetic-demo,e04,2026-01-01 00:00:30+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,30.0,10.0,1620,0,False
+synthetic-demo,e05,2026-01-01 00:01:00+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,60.0,30.0,1920,1,True
+synthetic-demo,e06,2026-01-01 00:01:30+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,90.0,30.0,2220,2,True
+synthetic-demo,e07,2026-01-01 00:02:00+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,120.0,30.0,2520,3,True
+synthetic-demo,e08,2026-01-01 00:02:30+00:00,pr_check,gh pr checks 42,pass,0.0,300,1.0,synthetic,150.0,30.0,2820,4,False
+synthetic-demo,e09,2026-01-01 00:02:40+00:00,test,python -m unittest test_example,9 tests OK,0.0,600,2.0,synthetic,160.0,10.0,3420,0,False
+synthetic-demo,e10,2026-01-01 00:02:50+00:00,test,python -m unittest test_example,missing result,,200,,synthetic,170.0,10.0,3620,1,False

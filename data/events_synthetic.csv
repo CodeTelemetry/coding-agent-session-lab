@@ -1,0 +1,11 @@
+session_id,event_id,started_at,tool,command,result,exit_code,tokens,duration_s,provenance
+synthetic-demo,e01,2026-01-01T00:00:00+00:00,read,example.py,source-v1,,120,1,synthetic
+synthetic-demo,e02,2026-01-01T00:00:10+00:00,edit,example.py,source-v2,,800,4,synthetic
+synthetic-demo,e03,2026-01-01T00:00:20+00:00,test,python -m unittest test_fast,5 tests OK,0,400,2,synthetic
+synthetic-demo,e04,2026-01-01T00:00:30+00:00,pr_check,gh pr checks 42,pending,8,300,1,synthetic
+synthetic-demo,e05,2026-01-01T00:01:00+00:00,pr_check,gh pr checks 42,pending,8,300,1,synthetic
+synthetic-demo,e06,2026-01-01T00:01:30+00:00,pr_check,gh pr checks 42,pending,8,300,1,synthetic
+synthetic-demo,e07,2026-01-01T00:02:00+00:00,pr_check,gh pr checks 42,pending,8,300,1,synthetic
+synthetic-demo,e08,2026-01-01T00:02:30+00:00,pr_check,gh pr checks 42,pass,0,300,1,synthetic
+synthetic-demo,e09,2026-01-01T00:02:40+00:00,test,python -m unittest test_example,9 tests OK,0,600,2,synthetic
+synthetic-demo,e10,2026-01-01T00:02:50+00:00,test,python -m unittest test_example,missing result,,200,,synthetic

@@ -1,0 +1,18 @@
+{
+  "synthetic_sessions": [
+    {
+      "session_id": "synthetic-demo",
+      "calls": 10,
+      "repeated_calls": 5,
+      "checkins": 5,
+      "repeated_checkins": 4,
+      "unchanged_checkins": 3,
+      "median_check_gap_s": 30.0,
+      "total_tokens": 3620,
+      "checkin_tokens": 1500,
+      "zero_exit_tests": 2,
+      "missing_test_results": 1
+    }
+  ],
+  "limits": "Repeats are exact calls, not proof of wasted work. Gaps are start-to-start, not idle time. Tokens are invented increments, not dollars or measured agent usage. An exit status supports only the tested assertions."
+}

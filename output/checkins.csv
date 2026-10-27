@@ -1,0 +1,6 @@
+session_id,event_id,started_at,tool,command,result,exit_code,tokens,duration_s,provenance,elapsed_s,tool_gap_s,cumulative_tokens,repeat_index,same_result_as_previous,check_gap_s
+synthetic-demo,e04,2026-01-01 00:00:30+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,30.0,10.0,1620,0,False,
+synthetic-demo,e05,2026-01-01 00:01:00+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,60.0,30.0,1920,1,True,30.0
+synthetic-demo,e06,2026-01-01 00:01:30+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,90.0,30.0,2220,2,True,30.0
+synthetic-demo,e07,2026-01-01 00:02:00+00:00,pr_check,gh pr checks 42,pending,8.0,300,1.0,synthetic,120.0,30.0,2520,3,True,30.0
+synthetic-demo,e08,2026-01-01 00:02:30+00:00,pr_check,gh pr checks 42,pass,0.0,300,1.0,synthetic,150.0,30.0,2820,4,False,30.0
